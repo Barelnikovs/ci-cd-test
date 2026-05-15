@@ -18,6 +18,11 @@ export default [
       parserOptions: {
         parser: tseslint.parser,
       },
+      globals: {
+        fetch: 'readonly',
+        window: 'readonly',
+        document: 'readonly',
+      },
     },
   },
 ]
