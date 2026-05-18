@@ -40,7 +40,7 @@ jobs:
         run: npm run preview &
 
       - name: start production preview
-        run: npx wait-on http://localhost:4173
+        run: npx wait-on http://localhost:5173
 
       - name: run Cypress
         run: npx cypress run
