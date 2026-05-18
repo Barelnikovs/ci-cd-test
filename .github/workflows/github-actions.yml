@@ -36,11 +36,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: start production preview
+      - name: Start production preview
         run: npm run preview &
 
-      - name: start production preview
-        run: npx wait-on http://localhost:5173
+      - name: Wait for server
+        run: npx wait-on http://localhost:4173
 
-      - name: run Cypress
+      - name: Run Cypress
         run: npx cypress run
